@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <style>
+      /* mini reset */
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+      /* end reset */
+
+      nav {
+        width: 100%;
+        background-color: #ccc;
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 2rem 5rem;
+      }
+
+      .post {
+        display: block;
+        padding: 1rem;
+        background-color: #ccc;
+        border-radius: 1.5rem;
+        color: #000;
+        text-decoration: none;
+      }
+
+      .post .title {
+        margin: .25rem 0;
+        font-size: 1.5rem;
+      }
+
+      .post .subtitle {
+        margin: .25rem 0;
+        font-size: 1.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Super Awesome Blog!</h1>
+    </nav>
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>
